@@ -36,15 +36,6 @@
       }
 
       .business-growth-btn {
-        display: inline-block;
-        opacity: 1;
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        color: var(--highlight-color);
-        font-size: 1.4rem;
-        line-height: 2rem;
-        font-weight: 500;
-
         align-self: flex-start; // 让自己的宽度不和上面的人一样宽
       }
     }

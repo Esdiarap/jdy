@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './MainBusinessGrowth.scss'
+import ButtonOpacity from "../ButtonOpacity";
 class MainBusinessGrowth extends Component {
   render() {
     return (
@@ -19,9 +20,7 @@ class MainBusinessGrowth extends Component {
               <p className='business-growth-description'>
                   仅凭拖拉拽，任意组合字段生成表单，简单连线即可设计业务流程。
               </p>
-              <a href="#" className='business-growth-btn'>
-                了解更多&nbsp;&rarr;
-              </a>
+              <ButtonOpacity>了解更多&nbsp;&rarr;</ButtonOpacity>
             </a>
           </div>
           <div className='business-growth-item-container'>
