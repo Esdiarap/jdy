@@ -1,0 +1,58 @@
+.corp-use {
+  padding: 10rem 0;
+  background-color: var(--background-color-white);
+}
+
+.crop-container {
+  margin-top: 4.2rem;
+  margin-bottom: 2.5rem;
+
+  .crop-col {
+    height: 25rem;
+    width: 11.3rem;
+    overflow: hidden;
+    //animation: infiniteRow infinite 1s linear;
+
+    .crop-item {
+      width: 11.3rem;
+      height: 11.4rem;
+      background-color: #fff;
+      box-shadow: 0 4px 4px 0 rgb(136 163 161 / 10%);
+      border-radius: 1.1rem;
+      border: 1px solid rgba(13, 179, 166, .3);
+      padding: 2.2rem 1.8rem 1.7rem;
+      flex: 0 0 auto;
+      animation: infiniteRow infinite 10s linear;
+
+      .crop-logo {
+        width: 7.2rem;
+        height: 3.5rem;
+        position: relative;
+      }
+
+      .crop-description {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        font-weight: 300;
+        color: var(--copyright-font-color);
+
+      }
+    }
+  }
+}
+
+.crop-tips {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: var(--copyright-font-color);
+  text-align: center;
+}
+
+@keyframes infiniteRow {
+  from {
+    transform: translateY(calc(11.4rem + 2.2rem) * 5 * -1 + 25rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
