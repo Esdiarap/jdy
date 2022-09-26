@@ -1,0 +1,78 @@
+.index-wrapper {
+  width: 100%;
+  height: 78rem;
+  position: relative;
+  padding-top: 6rem;
+
+  .index-bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .index-container {
+    width: 100%;
+    height: 61.3rem;
+
+    .index-text-container {
+      img, h2 { // 这里后面要换成img，h2只是个替代品
+        width: 42.9rem;
+        height: 4.6rem;
+        margin-bottom: 1.7rem;
+      }
+
+      h3 {
+        font-size: 2.8rem;
+        line-height: 4rem;
+        color: var(--font-color-black-primary);
+        margin-bottom: 2.9rem;
+      }
+
+      .introduce {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: var(--font-color-black-primary-darker);
+        cursor: pointer;
+        text-decoration: none;
+
+        align-self: center;
+      }
+    }
+  }
+
+  .index-bottom {
+    border-top: 3px solid #fff;
+    padding-bottom: 1.9rem;
+    position: relative;
+    background: linear-gradient(180deg,rgba(255,255,255,.35) 0,#FFF 12%,rgba(255,255,255,0) 100%);
+    max-width: 120rem;
+
+    .entrance-wrapper {
+      //background-color: #bfa;
+      width: 33.3%;
+      height: 13.8rem;
+      border-left: 2px solid var(--border-color);
+      padding: 1rem 4.5rem;
+      margin: 1.7rem 0 3rem;
+      &:last-child {
+        border-right: 2px solid var(--border-color);
+      }
+
+      .entrance-title {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: var(--font-color-black-primary);
+      }
+
+      .entrance-subtitle {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: var(--copyright-font-color);
+
+      }
+    }
+  }
+}
