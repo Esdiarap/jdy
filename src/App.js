@@ -1,9 +1,12 @@
 import './App.css';
+import './base.scss'
+import './utility.scss'
+import MainFooter from "./components/MainFooter/MainFooter";
 
 function App() {
   return (
     <div>
-      hey this is app component
+      <MainFooter></MainFooter>
     </div>
   );
 }
