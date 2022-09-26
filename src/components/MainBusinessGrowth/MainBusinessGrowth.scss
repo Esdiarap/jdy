@@ -1,0 +1,53 @@
+.business-growth {
+  padding-top: 4rem;
+  padding-bottom: 10.1rem;
+
+  .title {
+    margin-bottom: 3.5rem;
+  }
+
+  &-container {
+
+    .business-growth-item {
+      height: 25rem;
+      width: 40rem;
+      padding-top: 3rem;
+      padding-bottom: 3.5rem;
+      padding-left: 2.6rem;
+      padding-right: 9.4rem;
+      transform: translateX(10%);
+
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      font-weight: 600;
+
+      text-decoration: none;
+
+      .business-growth-title {
+        color: var(--font-color-black-primary);
+      }
+
+      .business-growth-description {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: var(--copyright-font-color);
+        letter-spacing: 1.5px;
+        font-weight: normal;
+      }
+
+      .business-growth-btn {
+        display: inline-block;
+        opacity: 1;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        color: var(--highlight-color);
+        font-size: 1.4rem;
+        line-height: 2rem;
+        font-weight: 500;
+
+        align-self: flex-start; // 让自己的宽度不和上面的人一样宽
+      }
+    }
+  }
+
+}
