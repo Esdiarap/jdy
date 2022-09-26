@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+$font-test: purple;
+:root {
+  --btn-color-from: rgba(255, 200, 64, 1);
+  --btn-color-to: rgba(255, 131, 79, 1);
+
+  --font-color-black-primary: #262626;
+  --font-color-black-primary-darker: #000;
+
+  --font-color-grey-primary: #666;
+  --copyright-font-color: #88a3a1;
+
+  --border-color: #e7e7e7;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}

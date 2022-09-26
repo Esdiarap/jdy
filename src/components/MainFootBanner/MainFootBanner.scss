@@ -1,0 +1,31 @@
+.foot-banner {
+  position: relative;
+  padding-top: 10.9rem;
+  padding-bottom: 5.3rem;
+  background-color: #dee2e6;
+
+  &-title {
+    font-size: 4.3rem;
+    line-height: 6.1rem;
+    color: var(--font-color-black-primary);
+    margin-bottom: .5rem;
+    font-weight: 600;
+  }
+
+  &-subtitle {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: var(--font-color-black-primary-darker);
+    margin-bottom: 2.7rem;
+  }
+
+  &-try {
+    margin-bottom: 6.2rem;
+  }
+
+  &-tips {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--copyright-font-color);
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css' // 引入基础样式
+import './index.scss' // 引入基础样式
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
