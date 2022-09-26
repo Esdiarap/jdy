@@ -64,7 +64,7 @@ class MainFooter extends Component {
             </li>
           </ul>
         </div>
-        <div className='container copyright'>
+        <div className='container copyright flexbox flexbox-center'>
           <div className='copyright-left'>
             <img src="#" alt="#"/>
             <a href="#">Hey man</a>
