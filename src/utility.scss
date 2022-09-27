@@ -83,8 +83,6 @@
   grid-template-columns: repeat(5, 1fr);
 }
 
-
-
 .big-fontsize {
   font-size: 4.8rem;
   font-weight: 400;
@@ -98,6 +96,14 @@
   opacity: 0;
 }
 
+.opacity1 {
+  opacity: 1;
+}
+
+.d-none {
+  display: none;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -108,4 +114,8 @@
 
 .position-relative {
   position: relative;
+}
+
+.position-absolute {
+  position: absolute;
 }

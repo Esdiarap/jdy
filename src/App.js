@@ -9,12 +9,14 @@ import MainIndex from "./components/MainIndex/MainIndex";
 import MainRichTemplate from "./components/MainRichTemplate/MainRichTemplate";
 import MainLogo from "./components/MainLogo/MainLogo";
 import MainAdvancedProductivity from "./components/MainAdvancedProductivity/MainAdvancedProductivity";
+import MainPersonalPerform from "./components/MainPersonalPerform/MainPersonalPerform";
 
 function App() {
   return (
     <div>
       <MainIndex></MainIndex>
       <MainLogo></MainLogo>
+      <MainPersonalPerform></MainPersonalPerform>
       <MainAdvancedProductivity></MainAdvancedProductivity>
       <MainRichTemplate></MainRichTemplate>
       <MainBusinessGrowth></MainBusinessGrowth>

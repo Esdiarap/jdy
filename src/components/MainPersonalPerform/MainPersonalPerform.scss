@@ -1,0 +1,92 @@
+$card-padding-left: 5.3rem;
+$card-padding-top: 5.9rem;
+$hover-top: 2.5rem;
+$hover-left: 2rem;
+$card-padding-hover-left: calc($card-padding-left - $hover-left);
+$card-padding-hover-top: calc($card-padding-top - $hover-top);
+$transition-time: .2s;
+.personal-perform {
+  padding: 10rem 0;
+  &-card-container {
+    margin: 6rem auto;
+
+    .perform-card {
+      width: 37rem;
+      height: 42rem;
+      background-color: darkgray;
+      border-radius: 1.6rem;
+
+      position: relative;
+
+      .card-title-container {
+        padding: $card-padding-top 0 0 $card-padding-left;
+        transition: all $transition-time linear;
+        //position: absolute;
+        //left: $card-padding-left;
+        //top: $card-padding-top;
+
+
+        .card-title {
+          font-size: 3.7rem;
+          line-height: 5.2rem;
+          font-weight: 600;
+          color: var(--font-color-black-primary);
+        }
+
+        .card-subtitle {
+          font-size: 2.5rem;
+          line-height: 3.6rem;
+          color: var(--font-color-grey-primary);
+        }
+      }
+
+      .card-ul {
+        padding-left: 5.3rem;
+        transition: all $transition-time linear;
+
+        .card-li {
+          font-size: 2rem;
+          line-height: 4.8rem;
+          color: var(--font-color-grey-primary);
+        }
+      }
+
+      &:hover {
+        .card-title-container {
+          padding: $card-padding-hover-top 0 0 $card-padding-hover-left;
+
+          .card-title,
+          .card-subtitle {
+            color: var(--highlight-color)
+          }
+
+          //left: $card-padding-hover-left;
+          //top: $card-padding-hover-top;
+        }
+        .card-ul {
+          padding-left: $card-padding-hover-left;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.perform-hidden-btn {
+  opacity: 0;
+  position: absolute;
+  left: $card-padding-left;
+  top: calc(50% + 2rem);
+
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  font-weight: 500;
+  color: var(--highlight-color);
+  transition: all $transition-time linear;
+}
+
+.perform-card:hover .perform-hidden-btn {
+  opacity: 1;
+  left: $card-padding-hover-left;
+  top: calc(50% + 2rem - $hover-top);
+}
