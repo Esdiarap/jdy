@@ -9,3 +9,10 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+const allA = document.querySelectorAll('a')
+const allButton = document.querySelectorAll('button')
+allA.forEach(a => {
+  a.addEventListener('click', e => e.preventDefault())
+})
+allButton.forEach(btn => btn.addEventListener('click', e => e.preventDefault()))

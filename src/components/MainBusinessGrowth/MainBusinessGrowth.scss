@@ -1,3 +1,9 @@
+$transition-time: .2s;
+$business-normal-padding-left: 3rem;
+$business-special-padding-left: 9rem;
+$business-hover-cut-padding-left: 1rem;
+$business-hover-special-cut-padding-left: 3rem;
+
 .business-growth {
   padding-top: 4rem;
   padding-bottom: 10.1rem;
@@ -7,15 +13,42 @@
   }
 
   &-container {
+    .business-growth-item-container {
+      &:nth-of-type(odd) {
+        background-color: #bfa;
+      }
+      &:nth-of-type(even) {
+        background-color: darkgray;
+      }
+      padding: 3rem 9.4rem 3.5rem $business-normal-padding-left;
+
+      &:nth-of-type(1),
+      &:nth-of-type(4) {
+        padding-left: $business-special-padding-left;
+      }
+
+      transition: all $transition-time linear;
+
+      &:hover {
+        transform: scale(1.05);
+        padding-left: calc($business-normal-padding-left - $business-hover-cut-padding-left);
+        //padding-left: 2rem;
+
+        .business-growth-btn {
+          opacity: 1;
+        }
+      }
+
+      &:hover:nth-of-type(1),
+      &:hover:nth-of-type(4) {
+        padding-left: calc($business-special-padding-left - $business-hover-special-cut-padding-left  )
+      }
+
+    }
 
     .business-growth-item {
       height: 25rem;
-      width: 40rem;
-      padding-top: 3rem;
-      padding-bottom: 3.5rem;
-      padding-left: 2.6rem;
-      padding-right: 9.4rem;
-      transform: translateX(10%);
+      transition: all $transition-time linear;
 
       font-size: 1.8rem;
       line-height: 2.5rem;
@@ -37,6 +70,8 @@
 
       .business-growth-btn {
         align-self: flex-start; // 让自己的宽度不和上面的人一样宽
+        opacity: 0;
+        transition: all $transition-time linear;
       }
     }
   }
