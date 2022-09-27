@@ -10,6 +10,7 @@ import MainRichTemplate from "./components/MainRichTemplate/MainRichTemplate";
 import MainLogo from "./components/MainLogo/MainLogo";
 import MainAdvancedProductivity from "./components/MainAdvancedProductivity/MainAdvancedProductivity";
 import MainPersonalPerform from "./components/MainPersonalPerform/MainPersonalPerform";
+import MainDigitalStrategy from "./components/MainDigitalStrategy/MainDigitalStrategy";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <MainPersonalPerform></MainPersonalPerform>
       <MainAdvancedProductivity></MainAdvancedProductivity>
       <MainRichTemplate></MainRichTemplate>
+      <MainDigitalStrategy></MainDigitalStrategy>
       <MainBusinessGrowth></MainBusinessGrowth>
       <MainCorpUse></MainCorpUse>
       <MainFootBanner></MainFootBanner>
