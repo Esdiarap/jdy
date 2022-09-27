@@ -35,6 +35,10 @@
   gap: .9rem;
 }
 
+.gap-medium {
+  gap: 3.3rem;
+}
+
 .margin-bottom-mini {
   margin-bottom: .9rem;
 }
@@ -92,4 +96,8 @@
 
 .inline-block {
   display: inline-block;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
