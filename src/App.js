@@ -6,11 +6,17 @@ import MainFootBanner from "./components/MainFootBanner/MainFootBanner";
 import MainCorpUse from "./components/MainCorpUse/MainCorpUse";
 import MainBusinessGrowth from "./components/MainBusinessGrowth/MainBusinessGrowth";
 import MainIndex from "./components/MainIndex/MainIndex";
+import MainRichTemplate from "./components/MainRichTemplate/MainRichTemplate";
+import MainLogo from "./components/MainLogo/MainLogo";
+import MainAdvancedProductivity from "./components/MainAdvancedProductivity/MainAdvancedProductivity";
 
 function App() {
   return (
     <div>
       <MainIndex></MainIndex>
+      <MainLogo></MainLogo>
+      <MainAdvancedProductivity></MainAdvancedProductivity>
+      <MainRichTemplate></MainRichTemplate>
       <MainBusinessGrowth></MainBusinessGrowth>
       <MainCorpUse></MainCorpUse>
       <MainFootBanner></MainFootBanner>
