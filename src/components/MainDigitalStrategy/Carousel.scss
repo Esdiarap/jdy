@@ -1,0 +1,28 @@
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    transition: transform .4s linear;
+
+  }
+
+  .carousel-btn-container {
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+
+    .carousel-btn {
+      flex: 0 0 auto;
+      background: transparent;
+    }
+
+    .carousel-btn-active {
+      background: #AEDDD9;
+    }
+  }
+}

@@ -2,8 +2,22 @@ import React, {Component} from 'react';
 import './MainDigitalStrategy.scss'
 import ButtonOpacity from "../ButtonOpacity";
 import strategyImg1 from './strategy-r1.png'
+import carouselItem1 from './strategy-slide-bg-2.png'
+import Carousel from "./Carousel";
 
 class MainDigitalStrategy extends Component {
+
+  renderCarouselItem = () => {
+    return Array(3).fill(0).map(() => (
+      <div
+        className='carousel-item'
+        key={Math.random()}
+      >
+        <img src={carouselItem1} alt="#" className='carousel-img'/>
+      </div>
+    ))
+  }
+
   render() {
     return (
       <div className='digital-strategy'>
@@ -12,7 +26,13 @@ class MainDigitalStrategy extends Component {
           <p className='title'>专业引领企业成长</p>
         </div>
         <div className='row strategy-wrapper grid col-4 margin-top-medium'>
-          <div className='strategy-carousel'></div>
+          <div className='strategy-carousel'>
+            <Carousel>
+              {
+                this.renderCarouselItem()
+              }
+            </Carousel>
+          </div>
           <div className='strategy-more flexbox flex-column flexbox-center gap-mini'>
             <p className='strategy-more-title text-center'>面向零代码开发者的免费干货资源</p>
             <p className='strategy-more-subtitle text-center'>120W+企业的信息化灵感从这里来</p>
